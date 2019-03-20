@@ -6,5 +6,8 @@
     "lambda-serve": "netlify-lambda serve lambda-src",
     "build": "NODE_ENV=production webpack && netlify-lambda build lambda-src",
     "dev": "NODE_ENV=development concurrently \"webpack-dev-server --content-base src/\" \"yarn run lambda-serve\""
+  },
+  "dependencies": {
+    "fuse.js": "^3.4.4"
   }
 }
